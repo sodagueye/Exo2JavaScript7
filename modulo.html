@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input , button{
+        width: 200px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    button{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+    h1{
+        text-align: center;
+    }
+    #result{
+        text-align: center;
+
+    }
+   
+</style>
+<body>
+    <!-- Exercice 2:
+  Écrire un script qui demande à l’utilisateur d’ajouter un nombre n.
+  Calculer  le modulo de ce nombre par 4 et afficher le résultat 
+  dans une phrase comme suit:"Si l'on di… -->
+<h1>Modulo</h1>
+<input type="number" name="" id="nombreN"> <br> 
+<button onclick="Modulo()"> modulo</button>
+<div id="result"></div>
+<script>
+    //declaration
+    function Modulo (){
+    var nombreN = parseInt(document.getElementById("nombreN").value);
+    // multiplication
+    if(!isNaN(nombreN) ){
+
+    
+     var result =  nombreN % 4; 
+     var result =nombreN +    " % "      +  4  +     " =  "   + result;
+     document.getElementById("result").textContent = result;
+    }else{}
+
+    }
+</script>
+
+
+</body>
+</html>
